@@ -1,49 +1,59 @@
-<template
->
-<div class="navbar">
-    <ul class="nav">
-        <li>Home</li>
-        <li>flags</li>
-        <li>About</li>
-    </ul>
-</div>
+<template>
+    <div class="navbar">
+      <ul class="nav">
+        <li>
+          <!-- Use router-link directly -->
+          <router-link to="/">Home</router-link>
+        </li>
+        <li>
+          <!-- Use router-link directly -->
+          <router-link to="/country">Country</router-link>
+        </li>
+        <li>
+          <!-- Use router-link directly -->
+          <router-link to="/about">About</router-link>
+        </li>
+      </ul>
+    </div>
+    <routerr-view></routerr-view>
+  </template>
+  
+  
+  <script setup>
+//   import { useRouter } from 'vue-router'
+  
+//   const router = useRouter()
 
-</template>
 
+// function goHome(){
+//     router.push('/country')
 
-<script setup>
+// }
 
-
-</script>
-
-<style scoped>
-
-.navbar{
+  </script>
+  
+  <style scoped>
+  .navbar {
     width: 100%;
     background-color: grey;
     display: flex;
     justify-content: center;
-    
-}
-.nav{
+  }
+  
+  .nav {
     list-style: none;
     display: flex;
     cursor: pointer;
     justify-items: center;
     margin: 10px;
-    /* display: flex;
-    flex-direction: row;
-   justify-content: space-between;
-    float: right;
-    background-color: rebeccapurple;
-    list-style: none; */
-
-text-decoration: none;
-}
-.nav li{
+  }
+  
+  .nav li {
     padding: 10px;
-}
-.nav li:hover{
+  }
+  
+  .nav li:hover {
     color: white;
-}
-</style>
+  }
+  </style>
+  

@@ -1,16 +1,16 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <HelloWorld />
+<router-view></router-view>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import navBar from './components/navBar/navBar.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  // components: {
+  //   HelloWorld
+  // }
 }
 </script>
 
