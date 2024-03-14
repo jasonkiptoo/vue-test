@@ -1,9 +1,12 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <navBar></navBar>
 <router-view></router-view>
 </template>
 
 <script>
+// import navBar from './components/navBar/navBar.vue';
+
 // import navBar from './components/navBar/navBar.vue';
 
 export default {
