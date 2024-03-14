@@ -8,11 +8,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 
 const CountryView= ()=>import('@/views/CountryView.vue');
-const HomeView= ()=>import('@/views/HomeView.vue');
+// const HomeView= ()=>import('@/views/HomeView.vue');
 const AboutView= ()=>import('@/views/AboutView.vue');
 
 const routes= [
-  { path: '/', component: HomeView },
+  // { path: '/', component: HomeView },
   { path: '/about', component: AboutView },
   { path: '/country', component: CountryView },
   // { path: '/about', component: About }
