@@ -6,7 +6,7 @@
             <tr v-for="(country, key) in countries" :key="key">
             <td>{{country.name.common}}</td>
             <td>
-                <img :src="country.flags.png"/>
+                <img v-bind:src="country.flags.png"/>
             </td>
             </tr>
         </table>
