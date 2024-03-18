@@ -13,6 +13,10 @@
           <!-- Use router-link directly -->
           <router-link to="/about">About</router-link>
         </li>
+        <li>
+          <!-- Use router-link directly -->
+          <router-link to="/todo">Todo List</router-link>
+        </li>
       </ul>
     </div>
     <routerr-view></routerr-view>

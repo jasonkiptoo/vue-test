@@ -1,26 +1,20 @@
-
+import HomeView from '@/views/HomeView.vue';
+import TodoList from '@/views/TodoList.vue';
 import { createRouter, createWebHistory } from 'vue-router'
-// import countryTable from '@/components/tables/countryTable.vue'
-// import navBar from '@/components/navBar/navBar.vue'
-// import HomeView from '@/views/HomeView.vue';
-// import AboutView from '@/views/AboutView.vue';
-// import CountryView from '@/views/CountryView.vue';
-
 
 const CountryView= ()=>import('@/views/CountryView.vue');
-// const HomeView= ()=>import('@/views/HomeView.vue');
 const AboutView= ()=>import('@/views/AboutView.vue');
 
 const routes= [
-  // { path: '/', component: HomeView },
-  { path: '/about', component: AboutView },
+  { path: '/', component: HomeView },
   { path: '/country', component: CountryView },
-  // { path: '/about', component: About }
+  { path: '/about', component: AboutView },
+  { path: '/todo', component: TodoList },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes
-  
 })
+
 export default router 

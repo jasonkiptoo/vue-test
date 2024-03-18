@@ -1,5 +1,5 @@
 <template>
-    Homne
+    Home
 </template>
 
 <script setup
