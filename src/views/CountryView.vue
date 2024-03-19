@@ -1,6 +1,6 @@
 <template>
     <div class="table">
-        <table class="table" border="1"> <!-- Add 'border="1"' attribute to add borders -->
+        <table class="table" border="2"> <!-- Add 'border="1"' attribute to add borders -->
             <thead> <!-- Add thead tag for table header -->
                 <tr>
                     <th>Country</th>

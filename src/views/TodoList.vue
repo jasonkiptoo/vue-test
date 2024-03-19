@@ -35,14 +35,35 @@ const itemsList=ref([{
 
 
 function addItem(){
-  itemsList.value.push({
+
+
+// if()\
+
+
+ 
+ let name= itemsList.value.map((el)=>{
+    return el.name
+})
+console.log(name, "thi is the array of items");
+if(name.includes(itemName)){
+    itemsList.value.push({
     name:itemName.value,
     status:false,
 
-  })}
+  })
+ console.log("Good");
+}
+
+else{
+    console.log("dsdsd");
+    window.alert("error")
+  }
+console.log(name, "name");
+}
   const onCheck =(item)=>{
 
     item.status = !item.status
+    // itemsList.pop()
 
 console.log(item, "dsjhhghjdjh");
 
