@@ -1,17 +1,26 @@
 <template>
     <div class="table">
-        <table class="table">
-            <th>country</th>
-            <th>flag</th>
-            <tr v-for="(country, key) in countries" :key="key">
-            <td>{{country.name.common}}</td>
-            <td>
-                <img v-bind:src="country.flags.png"/>
-            </td>
-            </tr>
+        <table class="table" border="1"> <!-- Add 'border="1"' attribute to add borders -->
+            <thead> <!-- Add thead tag for table header -->
+                <tr>
+                    <th>Country</th>
+                    <th>Flag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(country, key) in countries" :key="key">
+                    <td>{{ country.name.common }}</td>
+                    <td>
+                        <img :src="country.flags.png" alt="Flag of {{ country.name.common }}" />
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </template>
+
+
+
 
 
 <script setup>
@@ -37,5 +46,23 @@ const fetchCountries=()=>{
 </script>
 
 
-<style>
+<style scoped>
+.table {
+    width: 100%;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+.table th, .table td {
+    border: 1px solid #dddddd; /* Add borders to table cells */
+    padding: 8px; /* Add padding to cells */
+    text-align: left; /* Align text to the left */
+}
+
+.table th {
+    background-color: #f2f2f2; /* Add background color to table header */
+}
 </style>
