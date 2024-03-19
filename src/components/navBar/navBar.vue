@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar">
+    <div class="navbar sticky">
       <ul class="nav">
         <li>
           <!-- Use router-link directly -->
@@ -42,6 +42,8 @@
     background-color: grey;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
   }
   
   .nav {
